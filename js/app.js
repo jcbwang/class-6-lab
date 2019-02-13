@@ -230,5 +230,3 @@ alki.render = render_store;
 alki.caulculate_cookies_sold_each_hour();
 alki.calculate_total_cookies();
 alki.render();
-
-
