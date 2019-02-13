@@ -1,4 +1,38 @@
 
 td{
   border: black;
+}body{
+  background-color: rgb(192, 213, 238)
 }
+
+h1{
+  color: black;
+  margin: 30px;
+}
+
+table{
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(205, 243, 255);
+  margin: 20px
+}
+
+td{
+  padding:20px;
+  border: solid black 2px;
+}
+
+#times{
+  font-weight: bold;
+}
+
+#times td{
+  border-bottom: none;
+}
+
+#store-container :first-child{
+  font-weight: bold;
+}
+
+
