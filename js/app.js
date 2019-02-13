@@ -2,7 +2,7 @@
 
 //helper functions
 var _random = function(min,max){
-  return Math.random()*(max-min)*min;
+  return Math.random()*(max-min)+min;
 };
 var store_open = 6;
 var store_close = 20;
