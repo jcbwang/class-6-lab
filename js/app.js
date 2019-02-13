@@ -84,3 +84,4 @@ for(var i = 0; i < all_stores.length; i++){
   all_stores[i].render();
 }
 
+
