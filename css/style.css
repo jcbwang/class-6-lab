@@ -1,24 +1,31 @@
 
 body{
-  background-color: rgb(192, 213, 238)
+  background-color: #7A594A;
 }
 
 h1{
-  color: black;
+  color: #4F2815;
   margin: 30px;
+  font-size: 50px;
+  background-color: #CCAA9A;
+  width:450px;
+  text-align: center;
+  padding: 15px;
+  border:  solid 3px #4F2815;
 }
 
 table{
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  background-color: rgb(205, 243, 255);
+  background-color: #CCAA9A	;
   margin: 20px
 }
 
 td{
   padding:20px;
-  border: solid black 2px;
+  border: solid #4F2815 3px;
+  width: 80px;
 }
 
 #times{
@@ -33,4 +40,40 @@ td{
   font-weight: bold;
 }
 
+label{
+  display: block;
+  padding: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #CCAA9A;
+  margin: 15px;
+  border:solid 2px #4F2815;
+  
+}
 
+legend{
+  font-size: 30px;
+  font-weight: bold;
+  color: #4F2815;
+}
+input{
+  margin-left: 8px;
+  background-color: #CCAA9A;
+}
+
+form{
+  width: 500px;
+  margin:20px;
+  margin-top: 40px;
+}
+
+input:invalid{
+  border:2px dashed red;
+}
+label input:valid{
+  border:2px dashed green;
+}
+
+fieldset{
+  border:solid 3px #633D2B;
+}

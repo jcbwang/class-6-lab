@@ -7,29 +7,30 @@
   <body>
 
     <h1>Pat's Cookie Sales</h1>
-      <table>
+    <img src = "https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png">
+      <table id = "store-container">
         <tbody>
-
           <tr id = "times">
-            <td></td>
-            <td>6:00am</td>
-            <td>7:00am</td>
-            <td>8:00am</td>
-            <td>9:00am</td>
-            <td>10:00am</td>
-            <td>11:00am</td>
-            <td>12:00pm</td>
-            <td>1:00pm</td>
-            <td>2:00pm</td>
-            <td>3:00pm</td>
-            <td>4:00pm</td>
-            <td>5:00pm</td>
-            <td>6:00pm</td>
-            <td>7:00pm</td>
-            <td>Daily Location Total</td>
+              <td></td>
+              <td>6:00am</td>
+              <td>7:00am</td>
+              <td>8:00am</td>
+              <td>9:00am</td>
+              <td>10:00am</td>
+              <td>11:00am</td>
+              <td>12:00pm</td>
+              <td>1:00pm</td>
+              <td>2:00pm</td>
+              <td>3:00pm</td>
+              <td>4:00pm</td>
+              <td>5:00pm</td>
+              <td>6:00pm</td>
+              <td>7:00pm</td>
+              <td>Daily Location Total</td>
           </tr>
-      
-          <tr id = "store-container">
+        <tbody>
+          
+          <tr>
 
           </tr>
         </tbody>
@@ -40,6 +41,18 @@
           </tr>
 
         </tfoot>
+      </table>
+
+      <form id = "new-store-form">
+        <fieldset>
+          <legend>Add a new store</legend>
+          <label>Store name: <input name = "store_name" type = "text" required> </label>
+          <label>Minimum number of customers:<input name = "min_customer" type = "text" required></label>
+          <label>Maximum number of customers:<input name = "max_customer" type = "text" required></label>
+          <label>Average number of cookies: <input name = "avg_cookies" type = "text" required></label>
+          <input type = "submit">
+        </fieldset>
+      </form>
           
 
     
