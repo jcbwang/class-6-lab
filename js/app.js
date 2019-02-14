@@ -65,9 +65,8 @@ Store.prototype.render = function(){
   tr_el.appendChild(td_el);
 
   target.append(tr_el);
-  // table_el.appendChild(tr_el);
-  // target.appendChild(table_el);
 };
+
 
 //instantiating objects
 
@@ -83,5 +82,42 @@ var all_stores = [pike,seaTac,seattleCenter,capitolHill,alki];
 for(var i = 0; i < all_stores.length; i++){
   all_stores[i].render();
 }
+
+var form = document.getElementById('new-store-form');
+
+
+//collect form response by adding event listener
+form.addEventListener('submit',function(submitForm){
+  submitForm.preventDefault(); //doesn't refresh page
+  console.log('submit worked',submitForm.target.store_name.value);
+  var store_name = submitForm.target.store_name.value;
+  var min_customer = submitForm.target.min_customer.value;
+  var max_customer = submitForm.target.max_customer.value;
+  var avg_cookies = submitForm.target.avg_cookies.value;
+
+  var new_store = new Store(store_name,min_customer,max_customer,avg_cookies);
+  console.log(new_store);
+
+  new_store.render();
+  all_stores.push(new_store);
+
+});
+
+//add new store to array of all stores
+console.log(all_stores);
+
+//calculate totals 
+var column_one = [];
+var calculate_overall_total = function(){
+  for(var i = 0; i < all_stores.length; i++){
+    column_one.push(this.calculate_cookies_sold_each_hour[0]);
+  }
+};
+var column_one_sum = 0;
+for(var j = 0; j < column_one.length; j++){
+  column_one_sum += column_one[i];
+}
+calculate_overall_total();
+console.log(column_one);
 
 
