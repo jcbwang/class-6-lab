@@ -11,7 +11,6 @@ h1{
   width:450px;
   text-align: center;
   padding: 15px;
-  border:  solid 3px #4F2815;
 }
 
 table{
@@ -24,7 +23,7 @@ table{
 
 td{
   padding:20px;
-  border: solid #4F2815 3px;
+  border: solid #7A594A 13px;
   width: 80px;
 }
 
@@ -42,13 +41,11 @@ td{
 
 label{
   display: block;
-  padding: 20px;
+  padding: 10px;
   font-weight: bold;
   color: black;
   background-color: #CCAA9A;
   margin: 15px;
-  border:solid 2px #4F2815;
-  
 }
 
 legend{
