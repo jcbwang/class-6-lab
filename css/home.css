@@ -1,0 +1,158 @@
+body{
+  background-color: #363636;
+  margin:20px;
+  color: rgb(187, 177, 164);
+}
+.cart {
+  width:40px;
+  float:right;
+  margin-right:25px;
+  opacity: .5;
+  
+}
+.cart-label{
+  float:right;
+  position: absolute;
+  top: 33px;
+  right:90px;
+  opacity: .7;
+}
+#title-img{
+position:absolute;
+left: 400px;
+  
+}
+h1{
+  position:absolute;
+  top:20%;
+  left:33%;
+  font-size: 40px;
+  color:rgb(241, 226, 205);
+  font-family: cursive;
+  letter-spacing: 4px;
+}
+h3{
+  position: absolute;
+  top:27%;
+  left:43%;
+  letter-spacing: 2px;
+  font-size:20px;
+  color:rgb(236, 215, 202)
+}
+#header-div{
+  padding-left:20%;
+}
+#page-nav>nav>ul>li{
+  display:inline-block;
+  padding:3%;
+}
+#page-nav{
+  
+}
+#page-nav>nav>ul{
+  background-color:rgb(75, 74, 73);
+  opacity: .6;
+  margin-top:20px;
+  margin-bottom:30px;
+  
+}
+#page-nav>nav>ul>li:first-child{
+  margin-left:10%;
+}
+#main-container{
+  width: 1000px;
+  margin:auto;
+}
+#family{
+  width:600px;
+  float:left;
+  margin-right:30px;
+  opacity: .8;
+
+}
+#main-container>main>section>p{
+  text-indent: 3em;
+  line-height: 1.5em;
+}
+#shirt{
+  float:left;
+}
+#merch{
+  margin-top: 40px;
+  width: 650px;
+  float:left;
+}
+#merch>h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: cursive;
+  letter-spacing: 2px;
+}
+#merch-paragraph{
+  height: 324px;
+  width: 600px;
+  line-height:1.5em;
+  
+}
+#shirt{
+  margin-right:30px;
+  opacity: .7;
+}
+#merch-description{
+  text-indent: 2em;
+  margin-bottom: 40px;
+}
+#merch-paragraph>button{
+  margin-top:40px;
+  height: 35px;
+  width: 100px;
+  margin-left: 55px;
+  opacity: .8;
+}
+#supplies>h2{
+  margin-top:40px;
+  font-size:30px;
+  font-family:cursive;
+  letter-spacing:2px;
+}
+#supplies>img{
+  padding: 20px;
+}
+#contact{
+margin-top:40px;
+}
+
+#contact>h2{
+  padding:20px;
+}
+  
+input{
+  margin-top: 20px;
+  width: 350px;
+}
+form>button{
+  margin-top:20px;
+  height:30px;
+}
+form{
+  margin-top: 30px;
+}
+h2{
+  font-family: cursive;
+  font-size: 20px;
+}
+#supplies{
+  float:left;
+}
+#supplies>p{
+  margin-top:30px;
+  line-height: 2em;
+}
+select{
+  margin:10px;
+  height: 30px;
+}
+#supplies>img{
+  
+}
+
