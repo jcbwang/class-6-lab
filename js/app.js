@@ -37,52 +37,6 @@ Store.prototype.calculate_total_cookies = function(){
   this.total_cookies.push(resultSum);
 };
 
-Store.prototype.render = function(){
-
-  this.caulculate_cookies_sold_each_hour();
-  this.calculate_total_cookies();
-
-  var target = document.getElementById('store-container');
-  var tr_el = document.createElement('tr');
-  var td_el = document.createElement('td');
-
-  //add store name
-  // td_el = document.createElement('td');
-  td_el.textContent = this.store_name;
-  tr_el.appendChild(td_el);
-
-  //add cookies for each hour
-  for(var i = 0; i < this.cookies_sold_each_hour.length; i++){
-    td_el = document.createElement('td');
-    td_el.textContent = this.cookies_sold_each_hour[i] + ' cookies';
-    tr_el.appendChild(td_el);
-  }
-
-  //add location total
-  td_el = document.createElement('td');
-  td_el.textContent = this.total_cookies + ' cookies';
-  tr_el.appendChild(td_el);
-
-  target.appendChild(tr_el);
-};
-
-var form = document.getElementById('new-store-form');
-//collect form response by adding event listener
-form.addEventListener('submit',function(submitForm){
-  submitForm.preventDefault(); //doesn't refresh page
-  var store_name = submitForm.target.store_name.value;
-  var min_customer = submitForm.target.min_customer.value;
-  var max_customer = submitForm.target.max_customer.value;
-  var avg_cookies = submitForm.target.avg_cookies.value;
-
-  var new_store = new Store(store_name,min_customer,max_customer,avg_cookies);
-
-  new_store.render();
-
-  all_stores.push(new_store);
-
-});
-
 function footer(){
   var footer_total = document.getElementById('overall-total');
   var tr_el = document.createElement('tr');
@@ -119,17 +73,60 @@ function add_to_array(){
   var alki = new Store('Alki', 2, 16, 4.6);
   all_stores = [pike,seaTac,seattleCenter,capitolHill,alki];
 }
+var form = document.getElementById('new-store-form');
+//collect form response by adding event listener
+form.addEventListener('submit',function(submitForm){
+  submitForm.preventDefault(); //doesn't refresh page
+  var store_name = submitForm.target.store_name.value;
+  var min_customer = submitForm.target.min_customer.value;
+  var max_customer = submitForm.target.max_customer.value;
+  var avg_cookies = submitForm.target.avg_cookies.value;
+
+  var new_store = new Store(store_name,min_customer,max_customer,avg_cookies);
+
+  new_store.render();
+
+  all_stores.push(new_store);
+});
+
+Store.prototype.render = function(){
+
+  this.caulculate_cookies_sold_each_hour();
+  this.calculate_total_cookies();
+
+  var target = document.getElementById('store-container');
+  var tr_el = document.createElement('tr');
+  var td_el = document.createElement('td');
+
+  //add store name
+  td_el.textContent = this.store_name;
+  tr_el.appendChild(td_el);
+
+  //add cookies for each hour
+  for(var i = 0; i < this.cookies_sold_each_hour.length; i++){
+    td_el = document.createElement('td');
+    td_el.textContent = this.cookies_sold_each_hour[i] + ' cookies';
+    tr_el.appendChild(td_el);
+  }
+
+  //add location total
+  td_el = document.createElement('td');
+  td_el.textContent = this.total_cookies + ' cookies';
+  tr_el.appendChild(td_el);
+
+  target.appendChild(tr_el);
+};
+
 
 add_to_array();
+
 
 for(var i = 0; i < all_stores.length; i++){
   all_stores[i].render();
 }
 
+
 footer();
-
-
-
 
 
 
