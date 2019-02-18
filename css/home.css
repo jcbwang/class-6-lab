@@ -37,7 +37,7 @@ h3{
   left:43%;
   letter-spacing: 2px;
   font-size:20px;
-  color:rgb(236, 215, 202)
+  color:rgb(236, 215, 202);
 }
 #header-div{
   padding-left:20%;
@@ -45,9 +45,6 @@ h3{
 #page-nav>nav>ul>li{
   display:inline-block;
   padding:3%;
-}
-#page-nav{
-  
 }
 #page-nav>nav>ul{
   background-color:rgb(75, 74, 73);
@@ -116,23 +113,40 @@ h3{
   letter-spacing:2px;
 }
 #supplies>img{
-  padding: 20px;
+  padding: 30px;
+  width:250px;
+  opacity: .8;
+}
+#supplies>form>button{
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
 }
 #contact{
 margin-top:40px;
+float:right;
+position: absolute;
+top:900px;
+right: 220px;
+border:solid 2px rgb(236, 215, 202);
+padding:20px;
+height:350px;
 }
 
 #contact>h2{
-  padding:20px;
+  padding:10px;
 }
   
 input{
   margin-top: 20px;
-  width: 350px;
+  width: 250px;
+  margin-right:30px;
 }
-form>button{
+#contact>button{
   margin-top:20px;
-  height:30px;
+  height:35px;
+  width:100px;
+  opacity: .9;
 }
 form{
   margin-top: 30px;
@@ -140,9 +154,13 @@ form{
 h2{
   font-family: cursive;
   font-size: 20px;
+
 }
 #supplies{
   float:left;
+  border:solid 2px rgb(236, 215, 202);
+  margin-top: 50px;
+  padding:25px;
 }
 #supplies>p{
   margin-top:30px;
@@ -152,7 +170,17 @@ select{
   margin:10px;
   height: 30px;
 }
-#supplies>img{
-  
+textarea{
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+  opacity: .5;
+  color:black;
 }
 
+#chinook{
+  float:left;
+  margin-left:450px;
+  margin-top:30px;
+  opacity: .7;
+}
